@@ -1,0 +1,47 @@
+{
+  "name": "sahu_internship",
+  "version": "1.0.0",
+  "description": "Task is to make 3 Frontend UI of the provided templates",
+  "main": "template16.html",
+  "scripts": {
+    "start": "npm run watch:all",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server -c configs/my-bs-config.json",
+    "scss": "node-sass -o css/template1/ css/template1/ && node-sass -o css/template13/ css/template13/ && node-sass -o css/template16/ css/template16/",
+    "watch:scss": "onchange \"css/**/*.scss\" -- npm run scss",
+    "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\"",
+    "clean": "rimraf dist",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    "imagemin": "imagemin img/template1/* -o dist/img/template1 && imagemin img/template13/* -o dist/img/template13 && imagemin img/template16/* -o dist/img/template16",
+    "usemin": "usemin template1.html -d dist --htmlmin -o dist/template1.html && usemin template13.html -d dist --htmlmin -o dist/template13.html && usemin template16.html -d dist --htmlmin -o dist/template16.html",
+    "build": "npm run clean && npm run copyfonts && npm run imagemin && npm run usemin"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sniper199999/Sahu-Internship.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sniper199999/Sahu-Internship.git/issues"
+  },
+  "homepage": "https://github.com/Sniper199999/Sahu-Internship.git#readme",
+  "devDependencies": {
+    "cssmin": "^0.4.3",
+    "htmlmin": "^0.0.7",
+    "lite-server": "^2.3.0",
+    "node-sass": "^6.0.1",
+    "onchange": "^7.1.0",
+    "parallelshell": "^3.0.1",
+    "rimraf": "^3.0.2",
+    "uglifyjs": "^2.4.11",
+    "usemin-cli": "^0.6.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "bootstrap-social": "^5.1.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.12.9"
+  }
+}
