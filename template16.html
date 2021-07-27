@@ -1,26 +1,826 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-    <!-- build:css css/template16/main.css -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
-    <link rel="stylesheet" href="css/template16/styles.scss">
-    <!-- endbuild -->
+  <!-- build:css css/template16/main.css -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+  <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+  <link rel="stylesheet" href="css/template16/styles.css">
+  <!-- endbuild -->
 
-    <title>Teamplate 16</title>
+  <title>Teamplate 16</title>
 </head>
+
 <body>
-    
-    <!-- build:js js/template16/main.js -->
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/template16/scripts.js"></script>
-    <!-- endbuild -->
+  <div class="row header-bg fixed-top">
+    <div class="col-6 blue"></div>
+    <div class="col-6 gray"></div>
+  </div>
+  <div class="container fixed-top header-row gray">
+    <div class="row align-items-center inner">
+      <div class="col-auto blue">
+        <a href="#"><i class="fas fa-phone fa-white mr-2"></i></a>
+        <strong>Phone :</strong> + 1 800 722 8987
+      </div>
+      <div class="row col-auto ml-auto">
+        <a href="#"><span class="fas fa-envelope fa-white mr-2"></span></a>
+        <p class="mb-0 pr-3 mr-3 top-mail">info@denteur.com</p>
+
+        <a href="#"><span class="fab fa-facebook-f fa-white  mr-3"></span></a>
+        <a href="#"><i class="fab fa-twitter fa-white mr-3"></i></a>
+        <a href="#"><i class="fab fa-linkedin fa-white mr-3"></i></a>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-md navbar-light fixed-top">
+    <div class="container">
+      <button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#Navbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a href="#" class="navbar-brand mr-auto mr-md-3 pt-0 pb-0"><img src="img/template16/logo.png" height="40px"
+          alt=""></a>
+      <div class="collapse navbar-collapse" id="Navbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle nav-btn" href="#" id="navbarDropdown" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Home
+              <span class="fas fa-angle-down"></span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Home 1</a>
+              <a class="dropdown-item" href="#">Home 2</a>
+              <a class="dropdown-item" href="#">Home 3</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle nav-btn" href="#" id="navbarDropdown" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Pages
+              <span class="fas fa-angle-down"></span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Page 1</a>
+              <a class="dropdown-item" href="#">Page 2</a>
+              <a class="dropdown-item" href="#">Page 3</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-btn" id="navbarDropdown" href="#">Services</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle nav-btn" href="#" id="navbarDropdown" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Departments
+              <span class="fas fa-angle-down"></span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Department 1</a>
+              <a class="dropdown-item" href="#">Department 2</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle nav-btn" href="#" id="navbarDropdown" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Blogs
+              <span class="fas fa-angle-down"></span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Blog 1</a>
+              <a class="dropdown-item" href="#">Blog 2</a>
+              <a class="dropdown-item" href="#">Blog 3</a>
+              <a class="dropdown-item" href="#">Blog 4</a>
+              <a class="dropdown-item" href="#">Blog 5</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle nav-btn" href="#" id="navbarDropdown" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Contact
+              <span class="fas fa-angle-down"></span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="template1.html">Contact Us</a>
+              <a class="dropdown-item" href="#">Contact a Professional</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="jumbotron jumbo-carousel p-0 mb-0">
+    <div id="mycarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <div class="image">
+            <img class="d-block" src="img/template16/slider2.jpg" height="760" width="100%" alt="">
+          </div>
+          <div class="row carousel-caption d-none d-md-block text-left">
+            <div class="row col-7 p-0">
+
+              <h2 class="col-12 p-0">Creating <br>
+                <p>BEAUTIFUL SMILES</p>
+              </h2>
+              <p class="col-10 d-none d-sm-block p-0 more-info">Dentist is your primary care dental provider. This
+                dentist diagnoses and treats.</p>
+              <div class="btn-more mt-3">
+                <a class="btn btn-slider" href="#" role="button">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="image">
+            <img class="d-block" src="img/template16/slider2.jpg" height="760" width="100%" alt="">
+          </div>
+          <div class="row carousel-caption d-none d-md-block text-left">
+            <div class="row col-7 p-0">
+
+              <h2 class="col-12 p-0">Creating <br>
+                <p>BEAUTIFUL SMILES</p>
+              </h2>
+              <p class="col-10 d-none d-sm-block p-0 more-info">Dentist is your primary care dental provider. This
+                dentist diagnoses and treats.</p>
+              <div class="btn-more mt-3">
+                <a class="btn btn-slider" href="#" role="button">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="image">
+            <img class="d-block" src="img/template16/slider2.jpg" height="760" width="100%" alt="">
+          </div>
+          <div class="row carousel-caption d-none d-md-block text-left">
+            <div class="row col-7 p-0">
+              <h2 class="col-12 p-0">Creating <br>
+                <p>BEAUTIFUL SMILES</p>
+              </h2>
+              <p class="col-10 d-none d-sm-block p-0 more-info">Dentist is your primary care dental provider. This
+                dentist diagnoses and treats.</p>
+              <div class="btn-more mt-3">
+                <a class="btn btn-slider" href="#" role="button">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </div>
+  <div class="container book">
+    <div class="row">
+      <div class="col-lg-4 col-12 p-0">
+        <div class="contact-image">
+          <img src="img/template16/gallery5.jpg" width="100%" height="285px" alt="">
+        </div>
+        <div class="row contact-info mr-0 ml-0">
+          <div class="col-auto">
+            <img src="img/template16/phone-contact.svg" width="60px" height="60px" alt="">
+          </div>
+          <div class="col-auto pl-0">
+            <h5>Get in Touch
+              <br>
+              <span>+ 1 800 722 8987</span>
+            </h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-12 hours-tab">
+        <h3>Opening Hours</h3>
+        <div class="span-schedule">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <div class="row justify-content-between">
+                <span class="schedule-day">Mon to Fri</span>
+                <span class="">9:00 AM - 5:00 PM</span>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="row justify-content-between">
+                <span class="schedule-day">Saturday</span>
+                <span class="">9:00 AM - 4:00 PM</span>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="row justify-content-between">
+                <span class="schedule-day">Sunday</span>
+                <span class="">9:00 AM - 1:00 PM</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-12 contact-tab">
+        <h3>Book a Visit</h3>
+        <form id="contact-form" method="post" action="#" novalidate="true">
+          <div class="form-row">
+            <div class="form-group col-6">
+              <input type="name" class="form-control" id="nameinput" placeholder="Name">
+            </div>
+            <div class="form-group col-6">
+              <input type="email" class="form-control" id="emailinput" placeholder="Email Address">
+            </div>
+            <div class="form-group col-6">
+              <input type="phone" class="form-control" id="phoneinput" placeholder="Phone number">
+            </div>
+            <div class="form-group col-6">
+              <button type="submit" class="form-control btn btn-block">Send Request</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="row about">
+      <div class="col-6 p-0">
+        <div class="about-home">
+
+          <h5><i class="fas fa-grip-horizontal fa-blue mr-2"></i>ABOUT DENTEUR</h5>
+          <h2>Welcome To Dental Care Denteur</h2>
+          <p>A general dentist is your primary care dental provider. This dentist diagnoses, treats, and manages your
+            overall oral health care needs, including gum care, root canals, fillings, crowns, veneers, bridges, and
+            preventive education.</p>
+          <h3>Nutrition Special Features</h3>
+          <div class="row ha-bullets">
+            <div class="col-6 bullets-left">
+              <p>Anti-wrinkle treatment.</p>
+              <p>Varicose vein treatment.</p>
+              <p>Manual Handling Training.</p>
+            </div>
+            <div class="col-6 bullets-right">
+              <p>Anti-wrinkle treatment.</p>
+              <p>Varicose vein treatment.</p>
+              <p>Manual Handling Training.</p>
+            </div>
+          </div>
+          <img src="img/template16/signature.png" width="150px" alt="">
+        </div>
+      </div>
+      <div class="col-6 p-0">
+        <div class="about-video">
+          <div class="play-button d-flex align-items-center justify-content-center">
+            <i class="fas fa-play"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="jumbotron jumbo-why p-0 mb-0">
+    <div class="row m-0">
+      <div class="why-img col-5 p-0">
+        <img src="img/template16/img6.jpg" height="500px" width="100%" alt="">
+      </div>
+      <div class="why-content col-7">
+        <div class="inner-content">
+          <div class="panel-title">
+            <h5 class="mb-0">WHY US</h5>
+            <h2>Bringing Life to Your Smile</h2>
+          </div>
+          <p>Sharing your toothbrush is a great example of a bad habit that can negatively affect the health of your
+            mouth, there are many habits that can have a positive impact, not only for your oral health. </p>
+          <hr>
+          <div class="span-services">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="row inner-service-box">
+                  <div class="col-auto sp-icon-box pr-0">
+                    <img src="img/template16/dentist.svg" width="50px" alt="">
+                  </div>
+                  <div class="col sp-caption">
+                    <h4>Excellence Defined</h4>
+                    <p>We are providing different services in this sector to wide.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 sp-space-break">
+                <div class="row inner-service-box">
+                  <div class="col-auto sp-icon-box pr-0">
+                    <img src="img/template16/tooth-saved.svg" width="50px" alt="">
+                  </div>
+                  <div class="col sp-caption">
+                    <h4>Stunning smile</h4>
+                    <p>We are providing different services in this sector to wide.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="jumbotron jumbo-stats p-0 mb-0">
+    <div class="row stats-section col-12">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="inner-counter text-center">
+              <img src="img/template16/tooth.svg" width="50px" alt="">
+              <div class="counter-statistics">
+                <h1 class="counter">12001</h1>
+                <p>SAVED TEETH</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3 c-movil-breakpoint">
+            <div class="inner-counter text-center">
+              <img src="img/template16/doctor.svg" width="50px" alt="">
+              <div class="counter-statistics">
+                <h1 class="counter">8433</h1>
+                <p>SPECIALIST DOCTORS</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3 c-breakpoint">
+            <div class="inner-counter text-center">
+              <img src="img/template16/happy.svg" width="50px" alt="">
+              <div class="counter-statistics">
+                <h1 class="counter">2911</h1>
+                <p>HAPPY CUSTOMERS</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3 c-breakpoint">
+            <div class="inner-counter text-center">
+              <img src="img/template16/medical.svg" width="50px" alt="">
+              <div class="counter-statistics">
+                <h1 class="counter">11233</h1>
+                <p>CLINICS</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container service-section text-center">
+    <div class="section-title">
+      <h2>Our Services</h2>
+      <p>We specialise in intelligent &amp; effective Search and believes in the power of partnerships to grow business.
+      </p>
+    </div>
+    <div class="row cards-container">
+      <div class="col-sm-6 col-md-6 col-lg-4 p-0">
+        <div class="cards">
+          <div class="inner-counter text-center">
+            <div class="img-container d-flex align-items-center justify-content-center">
+              <img src="img/template16/dentist1.svg" width="50px" alt="">
+            </div>
+            <div class="counter-statistics">
+              <h1 class="counter">Orthodontic</h1>
+              <p>Measures of poor oral health used in the study included painful.</p>
+              <h5>READ MORE</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-4 p-0">
+        <div class="cards">
+          <div class="inner-counter text-center">
+            <div class="img-container d-flex align-items-center justify-content-center">
+              <img src="img/template16/dentist1.svg" width="50px" alt="">
+            </div>
+            <div class="counter-statistics">
+              <h1 class="counter">Endodontic</h1>
+              <p>Measures of poor oral health used in the study included painful.</p>
+              <h5>READ MORE</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-4 p-0">
+        <div class="cards">
+          <div class="inner-counter text-center">
+            <div class="img-container d-flex align-items-center justify-content-center">
+              <img src="img/template16/dentist1.svg" width="50px" alt="">
+            </div>
+            <div class="counter-statistics">
+              <h1 class="counter">Family Dentistry</h1>
+              <p>Measures of poor oral health used in the study included painful.</p>
+              <h5>READ MORE</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="jumbotron p-0 mb-0">
+    <div class="jumbo-testimonials">
+      <div class="container">
+        <div class="row m-0">
+          <div class="col-lg-4">
+            <div class="about-testimonials">
+              <h5>Wha our customer are saying</h5>
+              <h2>Testimonials</h2>
+              <p><strong>Going to use a passage of Lorem Ipsum, you need to be sure there readable content of a
+                  page.</strong></p>
+              <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                alteration
+                in some form</p>
+
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div id="tm-carousel" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                  <div class="row m-0">
+                    <div class="col testimonial-cards">
+                      <div class="tm-card">
+                        <div class="tm-msg">
+                          <p>I just wanted to share a quick note and let you know that you guys do a really good job.
+                            I’m
+                            glad I decided to work with.</p>
+                        </div>
+                        <div class="row tm-details">
+                          <div class="col-auto person-dp">
+                            <img src="img/template16/avatar1.jpg" alt="">
+                          </div>
+                          <div class="caption col pl-0">
+                            <h4><strong>Sara Jones</strong> - Designer</h4>
+                            <div class="row span-rating m-0">
+                              <i class="col-auto fas fa-star p-0 pr-2"></i>
+                              <i class="col-auto fas fa-star p-0 pr-2"></i>
+                              <i class="col-auto fas fa-star p-0 pr-2"></i>
+                              <i class="col-auto fas fa-star p-0 pr-2"></i>
+                              <i class="col-auto fas fa-star p-0 pr-2"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col testimonial-cards">
+                      <div class="tm-card">
+                        <div class="tm-msg">
+                          <p>I just wanted to share a quick note and let you know that you guys do a really good job.
+                            I’m
+                            glad I decided to work with.</p>
+                        </div>
+                        <div class="row tm-details">
+                          <div class="col-auto person-dp">
+                            <img src="img/template16/avatar2.jpg" alt="">
+                          </div>
+                          <div class="caption col pl-0">
+                            <h4><strong>Martha Smith</strong> - Lawyer</h4>
+                            <div class="row span-rating m-0">
+                              <i class="col-auto fas fa-star p-0 pr-2"></i>
+                              <i class="col-auto fas fa-star p-0 pr-2"></i>
+                              <i class="col-auto fas fa-star p-0 pr-2"></i>
+                              <i class="col-auto fas fa-star p-0 pr-2"></i>
+                              <i class="col-auto fas fa-star p-0 pr-2"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row m-0">
+                    <div class="col testimonial-cards">
+                      <div class="tm-card">
+                        <div class="tm-msg">
+                          <p>I just wanted to share a quick note and let you know that you guys do a really good job.
+                            I’m
+                            glad I decided to work with.</p>
+                        </div>
+                        <div class="row tm-details">
+                          <div class="col-auto person-dp">
+                            <img src="img/template16/avatar1.jpg" alt="">
+                          </div>
+                          <div class="caption col pl-0">
+                            <h4><strong>Sara Jones</strong> - Designer</h4>
+                            <div class="row span-rating m-0">
+                              <i class="col-auto fas fa-star p-0 pr-2"></i>
+                              <i class="col-auto fas fa-star p-0 pr-2"></i>
+                              <i class="col-auto fas fa-star p-0 pr-2"></i>
+                              <i class="col-auto fas fa-star p-0 pr-2"></i>
+                              <i class="col-auto fas fa-star p-0 pr-2"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col testimonial-cards">
+                      <div class="tm-card">
+                        <div class="tm-msg">
+                          <p>I just wanted to share a quick note and let you know that you guys do a really good job.
+                            I’m
+                            glad I decided to work with.</p>
+                        </div>
+                        <div class="row tm-details">
+                          <div class="col-auto person-dp">
+                            <img src="img/template16/avatar2.jpg" alt="">
+                          </div>
+                          <div class="caption col pl-0">
+                            <h4><strong>Martha Smith</strong> - Lawyer</h4>
+                            <div class="row span-rating m-0">
+                              <i class="col-auto fas fa-star p-0 pr-2"></i>
+                              <i class="col-auto fas fa-star p-0 pr-2"></i>
+                              <i class="col-auto fas fa-star p-0 pr-2"></i>
+                              <i class="col-auto fas fa-star p-0 pr-2"></i>
+                              <i class="col-auto fas fa-star p-0 pr-2"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row m-0">
+                    <div class="col testimonial-cards">
+                      <div class="tm-card">
+                        <div class="tm-msg">
+                          <p>I just wanted to share a quick note and let you know that you guys do a really good job.
+                            I’m
+                            glad I decided to work with.</p>
+                        </div>
+                        <div class="row tm-details">
+                          <div class="col-auto person-dp">
+                            <img src="img/template16/avatar1.jpg" alt="">
+                          </div>
+                          <div class="caption col pl-0">
+                            <h4><strong>Sara Jones</strong> - Designer</h4>
+                            <div class="row span-rating m-0">
+                              <i class="col-auto fas fa-star p-0 pr-2"></i>
+                              <i class="col-auto fas fa-star p-0 pr-2"></i>
+                              <i class="col-auto fas fa-star p-0 pr-2"></i>
+                              <i class="col-auto fas fa-star p-0 pr-2"></i>
+                              <i class="col-auto fas fa-star p-0 pr-2"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col testimonial-cards">
+                      <div class="tm-card">
+                        <div class="tm-msg">
+                          <p>I just wanted to share a quick note and let you know that you guys do a really good job.
+                            I’m
+                            glad I decided to work with.</p>
+                        </div>
+                        <div class="row tm-details">
+                          <div class="col-auto person-dp">
+                            <img src="img/template16/avatar2.jpg" alt="">
+                          </div>
+                          <div class="caption col pl-0">
+                            <h4><strong>Martha Smith</strong> - Lawyer</h4>
+                            <div class="row span-rating m-0">
+                              <i class="col-auto fas fa-star p-0 pr-2"></i>
+                              <i class="col-auto fas fa-star p-0 pr-2"></i>
+                              <i class="col-auto fas fa-star p-0 pr-2"></i>
+                              <i class="col-auto fas fa-star p-0 pr-2"></i>
+                              <i class="col-auto fas fa-star p-0 pr-2"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <ol class="carousel-indicators">
+                  <li data-target="#tm-carousel" data-slide-to="0" class="mr-2 active"></li>
+                  <li data-target="#tm-carousel" data-slide-to="1" class="mr-2"></li>
+                  <li data-target="#tm-carousel" data-slide-to="2" class="mr-2"></li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container about-denteur">
+    <div class="row">
+      <div class="col-lg-7">
+        <div class="title">
+          <h5>ABOUT DENTEUR</h5>
+          <h2>Simply Better Dentistry</h2>
+        </div>
+        <div class="description">
+          <p><strong>All practicing at Denteur have earned either three or more years of undergraduate, The most common
+              misuse for our teeth is tearing Sellotape.</strong></p>
+          <p>A general dentist is your primary care dental provider. This dentist diagnoses, treats, and manages your
+            overall oral health care needs, including gum care, root canals, fillings, crowns, veneers, bridges, and
+            preventive education.</p>
+          <div id="accordion">
+            <div class="card collapsed" data-toggle="collapse" data-target="#answer" aria-expanded="false">
+              <div class="row card-header m-0" role="tab" id="card-head">
+                <h5 class="col mb-0 p-0 collapsed">
+                  How can I contact you?
+                </h5>
+                <i class="col-auto fas fa-chevron-right"></i>
+              </div>
+              <div role="collapse" class="collapse" id="answer" data-parent="#accordion">
+                <div class="card-body">
+                  <p class="d-none d-sm-block">It is a long established fact that a reader will be distracted by the
+                    readable content of a page when looking at its grid-item. The point of using Lorem Ipsum.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5 space-break">
+        <img src="img/template16/img38.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="jumbotron care">
+    <div class="container">
+      <div class="row m-0">
+        <div class="col-6 box">
+          <h2>Care For Your Smile</h2>
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+            in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+          <a class="btn btn-red" href="#" role="button">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container news">
+    <div class="title text-center m-auto">
+      <h2>Latest News</h2>
+      <p>We specialise in intelligent &amp; effective Search and believes in the power of partnerships to grow business.
+      </p>
+    </div>
+    <div class="row m-0">
+      <div class="col-4 p-0">
+        <div class="holder-card">
+          <img src="img/template16/img37.jpg" alt="">
+          <div class="news-card">
+            <div class="row m-0">
+              <div class="col-auto news-date d-flex align-items-center justify-content-center">
+                <p>25<br><span>May</span></p>
+              </div>
+              <h5 class="col p-0">Causes and Treatment of Gengivitis</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 p-0">
+        <div class="holder-card">
+          <img src="img/template16/img34.jpg" alt="">
+          <div class="news-card">
+            <div class="row m-0">
+              <div class="col-auto news-date d-flex align-items-center justify-content-center">
+                <p>23<br><span>May</span></p>
+              </div>
+              <h5 class="col p-0">Oral Health Foundation Green Paper</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 p-0">
+        <div class="holder-card">
+          <img src="img/template16/img35.jpg" alt="">
+          <div class="news-card">
+            <div class="row m-0">
+              <div class="col-auto news-date d-flex align-items-center justify-content-center">
+                <p>12<br><span>May</span></p>
+              </div>
+              <h5 class="col p-0">Share a Smile Winners Announced</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="footer-contact">
+            <img src="img/template16/logo-footer.png" width="180px" alt="">
+            <p>Denteur care about dental promote dental health through organized.</p>
+            <div class="contact-info">
+              <div class="row align-content-center">
+                <i class="fas fa-map-marker"></i>
+                <p class="col">PO BOX 33195 NW 56th ST Miami, Florida</p>
+              </div>
+              <div class="row">
+                <i class="fas fa-phone"></i>
+                <p class="col">Call US: + 1 800 722 8987</p>
+              </div>
+              <div class="row">
+                <i class="fas fa-envelope"></i>
+                <p class="col">info@denteur.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="footer-recent">
+            <h4>RECENT POSTS</h4>
+            <div class="recent-post row m-0">
+              <div class="col-auto img-container">
+                <img class="" src="img/template16/blog-thumb.jpg" width="70px" alt="">
+              </div>
+              <div class="col post-caption">
+                <h5>What Causes Periocoronitis</h5>
+                <p>24 July 2019</p>
+              </div>
+            </div>
+            <hr class="divider">
+            <div class="recent-post row m-0">
+              <div class="col-auto img-container">
+                <img class="" src="img/template16/blog-thumb2.jpg" width="70px" alt="">
+              </div>
+              <div class="col post-caption">
+                <h5>Gingivitis Causes and Treatment</h5>
+                <p>22 July 2019</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="footer-links">
+            <h4>TAGS</h4>
+            <div class="links">
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blogs &amp; News</a></li>
+                <li><a href="contact-us.html">Contact US</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Gallery</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="footer-insta">
+            <h4>INSTAGRAM PHOTOS</h4>
+            <div class="insta-pics">
+              <div class="row m-0">
+                <div class="pic-container col-4 col-sm-2 col-md-2 col-lg-4">
+                  <a href="#"><img src="img/template16/img15.jpg" alt=""></a>
+                </div>
+                <div class="pic-container col-4 col-sm-2 col-md-2 col-lg-4">
+                  <a href="#"><img src="img/template16/img27.jpg" alt=""></a>
+                </div>
+                <div class="pic-container col-4 col-sm-2 col-md-2 col-lg-4">
+                  <a href="#"><img src="img/template16/img28.jpg" alt=""></a>
+                </div>
+                <div class="pic-container col-4 col-sm-2 col-md-2 col-lg-4">
+                  <a href="#"><img src="img/template16/img29.jpg" alt=""></a>
+                </div>
+                <div class="pic-container col-4 col-sm-2 col-md-2 col-lg-4">
+                  <a href="#"><img src="img/template16/img30.jpg" alt=""></a>
+                </div>
+                <div class="pic-container col-4 col-sm-2 col-md-2 col-lg-4">
+                  <a href="#"><img src="img/template16/img31.jpg" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="divider">
+      <div class="footer-bottom row justify-content-between">
+        <div class="copyright col-auto p-0">
+          <p>© 2019 Denteur - Responsive Dental &amp; Medical HTML Template</p>
+        </div>
+        <div class="footer-social col-auto p-0">
+          <div class="row m-0">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram mr-0"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- build:js js/template16/main.js -->
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/template16/scripts.js"></script>
+  <!-- endbuild -->
 </body>
+
 </html>
