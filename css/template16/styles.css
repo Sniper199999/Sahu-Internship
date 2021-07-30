@@ -1,25 +1,39 @@
+html {
+  scroll-behavior: smooth; }
+
 body {
   font-family: 'Poppins', sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  background-color: white; }
 
 .dropdown-toggle::after {
   display: none; }
 
 .navbar-light {
   margin-top: 50px;
-  background-color: white; }
+  background-color: white;
+  box-shadow: 0 4px 4px -6px #333; }
 
 #navbarDropdown {
   padding: 25px 15px;
+  transition: 0.2s;
   color: #333; }
+
+#navbarDropdown:hover {
+  transition: 0.2s;
+  color: #3AB3DF; }
 
 .dropdown-menu {
   border: none; }
   .dropdown-menu .dropdown-item {
     padding: 15px 25px; }
+  .dropdown-menu .dropdown-item:hover {
+    background-color: #d5eaff;
+    color: #3AB3DF; }
 
 .header-bg {
-  height: 50px; }
+  height: 50px;
+  background: linear-gradient(90deg, #3ab3df 0%, #3ab3df 50%, #556877 50%, #556877 100%); }
 
 .header-row {
   color: white;
@@ -41,13 +55,22 @@ body {
   background-color: #556877; }
 
 .fa-white {
-  color: white; }
+  color: white;
+  transition: 0.2s; }
+
+.fa-white:hover {
+  color: #3AB3DF;
+  transition: 0.2s; }
 
 .fa-blue {
   color: #3AB3DF; }
 
 .jumbo-carousel {
   margin-top: 140px; }
+  .jumbo-carousel a .icon-holder {
+    height: 40px;
+    width: 40px;
+    background-color: #35414b; }
 
 .carousel-caption {
   transform: translateY(-50%);
@@ -58,11 +81,6 @@ body {
     font-size: 60px; }
     .carousel-caption h2 p {
       font-weight: 700; }
-  .carousel-caption .btn {
-    padding: 12px 48px;
-    font-weight: 700;
-    background-color: #eb662d;
-    color: white; }
 
 .more-info {
   font-weight: 300;
@@ -94,6 +112,8 @@ body {
     background: #3AB3DF; }
   .book .contact-image {
     position: relative; }
+    .book .contact-image img {
+      object-fit: cover; }
   .book .contact-image:after {
     content: '\A';
     position: absolute;
@@ -136,7 +156,7 @@ body {
       border: none; }
     .book .contact-tab .btn {
       font-weight: 600;
-      background-color: #eb662d;
+      background-color: #f0a889;
       color: white; }
 
 .schedule-day {
@@ -144,8 +164,8 @@ body {
 
 .about {
   margin-top: 75px; }
-  .about .about-home {
-    padding-right: 40px; }
+  .about .about-home .row {
+    margin-bottom: 30px; }
   .about h5 {
     color: #DDD;
     font-weight: 600;
@@ -162,9 +182,9 @@ body {
     color: #35414b;
     font-weight: 600;
     font-size: 22px; }
-  .about .ha-bullets p {
+  .about .bullets p {
     margin-bottom: 5px; }
-  .about .ha-bullets p::before {
+  .about .bullets p::before {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     content: "\f00c";
@@ -173,25 +193,34 @@ body {
   .about img {
     padding-top: 25px; }
   .about .about-video {
-    background-image: url("../../img/template16/img63.jpg");
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; }
-  .about .play-button {
-    position: absolute;
-    margin: auto;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 60px;
-    height: 60px;
-    background-color: #EF8354;
-    border-radius: 50px;
-    transition: 0.2s; }
-    .about .play-button i {
-      color: white; }
+    height: 490px; }
+    .about .about-video .img-holder {
+      position: relative;
+      height: inherit;
+      overflow: hidden; }
+      .about .about-video .img-holder img {
+        width: 100%;
+        height: inherit;
+        object-fit: cover;
+        padding: 0;
+        transition: 0.2s; }
+      .about .about-video .img-holder img:hover {
+        transition: 0.4s;
+        transform: scale(1.1); }
+      .about .about-video .img-holder .play-button {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 60px;
+        height: 60px;
+        background-color: #EF8354;
+        border-radius: 50px;
+        transition: 0.2s; }
+        .about .about-video .img-holder .play-button i {
+          color: white; }
   .about .about-video:hover {
     cursor: pointer; }
     .about .about-video:hover .play-button {
@@ -199,7 +228,8 @@ body {
       box-shadow: 0px 0px 0px 25px rgba(255, 84, 10, 0.3); }
 
 .jumbo-why {
-  margin-top: 75px; }
+  margin-top: 75px;
+  background-color: white; }
   .jumbo-why .why-img {
     height: 500px;
     z-index: 2; }
@@ -260,7 +290,9 @@ body {
   color: white;
   margin: -60px 0 0 0; }
   .jumbo-stats .stats-section .container {
-    margin: 120px auto 95px auto; }
+    margin: 120px auto 55px auto; }
+    .jumbo-stats .stats-section .container .box {
+      margin-bottom: 40px; }
   .jumbo-stats .stats-section h1 {
     font-weight: 700;
     margin-top: 10px;
@@ -314,7 +346,8 @@ body {
     font-weight: 600;
     font-size: 17px;
     color: #3AB3DF;
-    margin: 35px 0 15px 0; }
+    margin: 35px 0 15px 0;
+    cursor: pointer; }
 
 .jumbo-testimonials {
   margin: 75px 0 75px 0;
@@ -346,11 +379,9 @@ body {
     .jumbo-testimonials .container p {
       font-size: 15px;
       line-height: 1.9; }
-    .jumbo-testimonials .container #tm-carousel .carousel-item {
-      height: 370px; }
     .jumbo-testimonials .container #tm-carousel .testimonial-cards {
-      margin: 20px;
       padding: 35px;
+      margin-bottom: 15px;
       background-color: white; }
       .jumbo-testimonials .container #tm-carousel .testimonial-cards .tm-card .tm-msg {
         position: relative; }
@@ -386,12 +417,15 @@ body {
         .jumbo-testimonials .container #tm-carousel .testimonial-cards .tm-card .tm-details .caption i {
           font-size: 13px;
           color: #eb662d; }
-    .jumbo-testimonials .container #tm-carousel .carousel-indicators li {
-      width: 15px;
-      height: 15px;
-      border-radius: 50%; }
-    .jumbo-testimonials .container #tm-carousel .carousel-indicators li.active {
-      background-color: #eb662d; }
+    .jumbo-testimonials .container .carousel-indicators {
+      position: initial;
+      padding-top: 20px; }
+      .jumbo-testimonials .container .carousel-indicators li {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%; }
+      .jumbo-testimonials .container .carousel-indicators li.active {
+        background-color: #eb662d; }
 
 .about-denteur .title {
   margin-bottom: 35px;
@@ -423,7 +457,8 @@ body {
   background-color: #F7FAFA; }
   .about-denteur .description #accordion .card .card-header {
     border-bottom: none;
-    background-color: #F7FAFA; }
+    background-color: #F7FAFA;
+    cursor: pointer; }
 
 .about-denteur .description #accordion h5 {
   font-size: 17px;
@@ -445,6 +480,7 @@ body {
 
 .about-denteur img {
   width: 100%;
+  height: 545px;
   object-fit: cover; }
 
 .care {
@@ -493,12 +529,22 @@ body {
     line-height: 1.8;
     margin-bottom: 40px; }
 
+.news .news-holder {
+  margin-bottom: 30px; }
+
 .news .holder-card {
-  margin: 0px 10px 10px 10px;
-  box-shadow: -1px 1px 9px 4px rgba(227, 227, 227, 0.81); }
+  margin: 0px 10px 0px 10px;
+  box-shadow: -1px 1px 9px 4px rgba(227, 227, 227, 0.81);
+  height: 100%;
+  overflow: hidden;
+  cursor: pointer; }
   .news .holder-card img {
     object-fit: cover;
-    width: 100%; }
+    width: 100%;
+    transition: 0.3s; }
+  .news .holder-card img:hover {
+    transform: scale(1.1);
+    transition: 0.3s; }
   .news .holder-card .news-card {
     position: relative;
     margin: -50px 15px 0px 15px;
@@ -531,7 +577,7 @@ footer {
   background-color: #35414b;
   color: white;
   margin-top: 60px;
-  padding: 50px 0; }
+  padding: 10px 0 50px 0; }
   footer .container {
     margin: 25px auto 10px auto; }
   footer h4 {
@@ -560,18 +606,20 @@ footer {
         margin: 0; }
   footer .footer-recent {
     margin-bottom: 30px; }
-    footer .footer-recent .recent-post .img-container {
-      width: 70px;
-      height: 70px;
-      padding: 0; }
-    footer .footer-recent .recent-post .post-caption h5 {
-      font-size: 15px;
-      line-height: 1.3;
-      font-weight: 600; }
-    footer .footer-recent .recent-post .post-caption p {
-      font-size: 13px;
-      line-height: 1.5;
-      margin: 0; }
+    footer .footer-recent .recent-post {
+      cursor: pointer; }
+      footer .footer-recent .recent-post .img-container {
+        width: 70px;
+        height: 70px;
+        padding: 0; }
+      footer .footer-recent .recent-post .post-caption h5 {
+        font-size: 15px;
+        line-height: 1.3;
+        font-weight: 600; }
+      footer .footer-recent .recent-post .post-caption p {
+        font-size: 13px;
+        line-height: 1.5;
+        margin: 0; }
     footer .footer-recent hr {
       margin: 20px 0;
       border-top: 1px solid rgba(255, 255, 255, 0.2); }
@@ -597,10 +645,16 @@ footer {
         color: #3AB3DF;
         transition: 0.2s; }
   footer .footer-insta .insta-pics .pic-container {
-    padding: 3px; }
+    padding: 3px;
+    overflow: hidden;
+    cursor: pointer; }
     footer .footer-insta .insta-pics .pic-container a img {
       object-fit: cover;
-      width: 100%; }
+      width: 100%;
+      transition: 0.2s; }
+    footer .footer-insta .insta-pics .pic-container a img:hover {
+      transform: scale(1.1);
+      transition: 0.2s; }
   footer hr {
     margin: 30px 0 20px 0;
     border-top: 1px solid rgba(255, 255, 255, 0.2); }
@@ -615,3 +669,46 @@ footer {
     footer .footer-bottom .footer-social a:hover {
       color: #3AB3DF;
       transition: 0.2s; }
+
+#toTopBtn {
+  position: fixed;
+  height: 64px;
+  width: 64px;
+  bottom: 26px;
+  right: 39px;
+  z-index: 98;
+  padding: 21px;
+  background-color: #3AB3DF;
+  border-radius: 100%;
+  color: white;
+  opacity: 0.5; }
+
+@media (max-width: 1199px) {
+  .jumbo-why .why-content {
+    margin: 0px; } }
+
+@media (max-width: 991px) {
+  .header-bg .container {
+    margin: 0; }
+  .navbar .container {
+    margin: 0; }
+  .jumbo-carousel {
+    margin-top: 105px; }
+  .service-section .section-title {
+    width: 100%; }
+  .news .title {
+    width: 100%; } }
+
+@media (max-width: 767px) {
+  .navbar {
+    margin-top: 0px; }
+    .navbar .container {
+      margin: 0; }
+  .jumbo-carousel {
+    margin-top: 56px; }
+  .book {
+    margin-top: 50px; }
+  .carousel-caption h2 {
+    font-size: 40px; }
+  .jumbo-why .why-content .inner-content {
+    padding: 35px 0; } }

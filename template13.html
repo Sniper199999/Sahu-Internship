@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,20 +8,806 @@
 
     <!-- build:css css/template13/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
-    <link rel="stylesheet" href="css/template13/styles.scss">
+    <link rel="stylesheet" href="css/template13/styles.css">
     <!-- endbuild -->
 
     <title>Teamplate 13</title>
 </head>
+
 <body>
-    
+    <div class="header-bg fixed-top d-none d-md-block">
+        <div class="container header-row gray">
+            <div class="row align-items-center inner">
+                <div class="col-auto search">
+                    <p>Search</p>
+                </div>
+                <div class="row col-auto  ml-lg-auto ml-md-1 align-items-center">
+                    <div class="signin-container mr-4">
+                        <span class="fas fa-sign-in-alt mr-2"></span>
+                        <span class="mb-0 sign-in">Login</span>
+                    </div>
+                    <div class="signin-container mr-3">
+                        <span class="fas fa-lock-open mr-2"></span>
+                        <span class="mb-0 sign-in">Register</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-xl navbar-light fixed-top">
+        <div class="container p-0">
+            <button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="#" class="navbar-brand mr-auto pt-0 pb-0"><img src="img/template13/bikespot.png" height="45px"
+                    alt=""></a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="row navbar-nav m-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle nav-btn" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            HOME
+                            <span class="fas fa-angle-down"></span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Home 1</a>
+                            <a class="dropdown-item" href="#">Home 2</a>
+                            <a class="dropdown-item" href="#">Home 3</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle nav-btn" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            SEARCH
+                            <span class="fas fa-angle-down"></span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="">Search 1</a>
+                            <a class="dropdown-item" href="">Search 2</a>
+                            <a class="dropdown-item" href="">Search 3</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle nav-btn" href="" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            COMPARE
+                            <span class="fas fa-angle-down"></span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="">Compare 1</a>
+                            <a class="dropdown-item" href="">Compare 2</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle nav-btn" href="" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            REVIEWS
+                            <span class="fas fa-angle-down"></span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="">Review 1</a>
+                            <a class="dropdown-item" href="">Review 2</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle nav-btn" href="" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            ABOUT US
+                            <span class="fas fa-angle-down"></span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href=""></a>
+                            <a class="dropdown-item" href="">About Our Life</a>
+                            <a class="dropdown-item" href="">About Our Job</a>
+                            <a class="dropdown-item" href="">About Our Goal</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle nav-btn" href="" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            SERVICES
+                            <span class="fas fa-angle-down"></span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="">Service 1</a>
+                            <a class="dropdown-item" href="">Service 2</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle nav-btn" href="" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            PAGES
+                            <span class="fas fa-angle-down"></span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="">Page 1</a>
+                            <a class="dropdown-item" href="">Page 2</a>
+                            <a class="dropdown-item" href="">Page 3</a>
+                            <a class="dropdown-item" href="">Page 4</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle nav-btn" href="" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            USERS
+                            <span class="fas fa-angle-down"></span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="">User Profile</a>
+                            <a class="dropdown-item" href="">User Settings</a>
+                        </div>
+                    </li>
+                </ul>
+                <a class="btn btn-sell ml-auto" href="">SELL YOUR BIKE</a>
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron jumbo-search">
+        <div class="container text-center">
+            <h1>Find What Are You Looking For</h1>
+            <p>Over 90,000 Latest Bikes In Databank</p>
+            <div class="search-form m-0">
+                <form class="src-form" action="" novalidate="">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12 col-sm-4">
+                            <select class="form-control" required>
+                                <option value="" disabled selected>Select an option</option>
+                                <option value="1">Model 1</option>
+                                <option value="2">Model 2</option>
+                                <option value="3">Model 3</option>
+                                <option value="4">Model 4</option>
+                                <option value="5">Model 5</option>
+                                <option value="6">Model 6</option>
+                                <option value="7">Model 7</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a option.
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-sm-4">
+                            <input type="text" class="form-control" placeholder="Eg Honda Civic , Audi , Ford..."
+                                required>
+                            <div class="invalid-feedback">
+                                Field cannot be empty.
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 col-sm-4">
+                            <button type="submit" class="btn btn-theme btn-block">SEARCH <i class="fas fa-search pl-2"
+                                    aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container featured-container p-0">
+        <div class="col-xs-12 col-md-12 col-sm-12 text-center">
+            <h2>Latest <span class="heading-color"> Featured </span> Bikes</h2>
+            <p class="heading-text">Eu delicata rationibus usu. Vix te putant utroque, ludus fabellas duo eu, his dico
+                ut debet consectetuer.</p>
+        </div>
+    </div>
+    <div class="jumbotron jumbo-sale">
+        <div class="container p-0">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                    <div class="sale-info">
+                        <h3> Want To Sale Your Bike ?</h3>
+                        <h2>Are you looking for a Bike?</h2>
+                        <p>Search your car in our Inventory and request a quote on the vehicle of your choosing sonu.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                    <div class="sale-info">
+                        <h3>Want To Sale Your Bike?</h3>
+                        <h2>Do you want to sell your Bike?</h2>
+                        <p>Request search your car in our Inventory and a quote on the vehicle of your choosing.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container featured-container p-0">
+        <div class="col-xs-12 col-md-12 col-sm-12 text-center">
+            <h2>Latest <span class="heading-color"> Trending </span> Ads</h2>
+            <p class="heading-text">Eu delicata rationibus usu. Vix te putant utroque, ludus fabellas duo eu, his dico
+                ut debet consectetuer.</p>
+        </div>
+    </div>
+    <div class="container ads-container">
+        <div class="row inner">
+            <div class="col-md-3 col-sm-5 col-xs-12 p-0">
+                <div class="img-box">
+                    <a href="" class="play-video">
+                        <img src="img/template13/qq.png" alt="">
+                    </a>
+                    <img src="img/template13/h-1-360x270.jpg" class="img-responsive" alt="">
+                    <div class="img-total">
+                        <strong>3</strong>
+                        photos
+                    </div>
+                </div>
+                <div class="user-dp">
+                    <a href="">
+                        <img src="img/template13/1.jpg" class="avatar avatar-small" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-9 col-sm-7 col-xs-12">
+                <div class="row">
+                    <div class="info-box col-lg-9 col-md-12 col-xs-12">
+                        <h3>
+                            <a href="">Honda Cbr 600</a>
+                        </h3>
+                        <ul class="ad-info">
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <a href="">Bloomfield</a>,
+                                <a href="">New Jersey</a>,
+                                <a href="">United States</a>
+                            </li>
+                            <li>
+                                <i class="far fa-clock"></i>
+                                July 28, 2017
+                            </li>
+                        </ul>
+                        <div class="ad-details">
+                            <p>On The Wheel was established in 2006 and has grown fast to become one of south’s top
+                                motorcycle shops. Our state ...</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-tachometer-alt"></i>8,000 km</li>
+                                <li><i class="fas fa-chess-knight"></i>1500 cc</li>
+                                <li><i class="fas fa-car-side"></i>SxS &amp; UTV</li>
+                                <li><i class="fas fa-cog"></i>Bronze</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="price-box col-lg-3 col-xs-12 col-md-12">
+                        <div class="overview">
+                            <div class="ad-stats hidden-xs">
+                                <span>Ad Type : </span>
+                                Sell
+                            </div>
+                            <div class="ad-stats hidden-xs">
+                                <span>Condition : </span>
+                                New
+                            </div>
+                            <div class="ad-stats hidden-xs">
+                                <span>Visits : </span>
+                                2705
+                            </div>
+                        </div>
+                        <div class="price">
+                            <span>
+                                $ 3,343<span class="">(Fixed)</span>
+                            </span>
+                        </div>
+                        <a href="" class="btn btn-block btn-theme">
+                            <i class="fas fa-eye" aria-hidden="true"></i>
+                            VIEW AD
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row inner">
+            <div class="col-md-3 col-sm-5 col-xs-12 p-0">
+                <div class="img-box">
+                    <a href="" class="play-video">
+                        <img src="img/template13/qq.png" alt="">
+                    </a>
+                    <img src="img/template13/k-360x270.jpg" class="img-responsive" alt="">
+                    <div class="img-total">
+                        <strong>3</strong>
+                        photos
+                    </div>
+                </div>
+                <div class="user-dp">
+                    <a href="">
+                        <img src="img/template13/1.jpg" class="avatar avatar-small" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-9 col-sm-7 col-xs-12">
+                <div class="row">
+                    <div class="info-box col-md-9 col-sm-12 col-xs-12">
+                        <h3>
+                            <a href="">Kawasaki Ninja Bike </a>
+                        </h3>
+                        <ul class="ad-info">
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <a href="">Bellevue</a>,
+                                <a href="">Washington</a>,
+                                <a href="">United States</a>
+                            </li>
+                            <li>
+                                <i class="far fa-clock"></i>
+                                July 28, 2017
+                            </li>
+                        </ul>
+                        <div class="ad-details">
+                            <p>On The Wheel was established in 2006 and has grown fast to become one of south’s top
+                                motorcycle shops. Our state ...</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-tachometer-alt"></i>8,000 km</li>
+                                <li><i class="fas fa-chess-knight"></i>1250 cc</li>
+                                <li><i class="fas fa-car-side"></i>Road Bikes</li>
+                                <li><i class="fas fa-cog"></i>Green</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="price-box col-md-3 col-xs-12 col-sm-12">
+                        <div class="overview">
+                            <div class="ad-stats hidden-xs">
+                                <span>Ad Type : </span>
+                                Sell
+                            </div>
+                            <div class="ad-stats hidden-xs">
+                                <span>Condition : </span>
+                                New
+                            </div>
+                            <div class="ad-stats hidden-xs">
+                                <span>Visits : </span>
+                                2581
+                            </div>
+                        </div>
+                        <div class="price">
+                            <span>
+                                $ 3,343<span class="">(Negotiable)</span>
+                            </span>
+                        </div>
+                        <a href="" class="btn btn-block btn-theme">
+                            <i class="fas fa-eye" aria-hidden="true"></i>
+                            VIEW AD
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron jumbo-stats p-0 mb-0">
+        <div class="row stats-section col-12">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 col-lg-3 box">
+                        <div class="inner-counter text-center">
+                            <img src="img/template13/motorbike.png" width="60px" alt="">
+                            <div class="counter-statistics">
+                                <h1 class="counter countfect" data-num="1238"></h1>
+                                <h4>Total <span>Bikes</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 box">
+                        <div class="inner-counter text-center">
+                            <img src="img/template13/protection.png" width="60px" alt="">
+                            <div class="counter-statistics">
+                                <h1 class="counter countfect" data-num="820"></h1>
+                                <h4>Verified <span>Dealers</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 box">
+                        <div class="inner-counter text-center">
+                            <img src="img/template13/heart.png" width="60px" alt="">
+                            <div class="counter-statistics">
+                                <h1 class="counter countfect" data-num="1024"></h1>
+                                <h4>Active <span>Users</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 box">
+                        <div class="inner-counter text-center">
+                            <img src="img/template13/earth.png" width="60px" alt="">
+                            <div class="counter-statistics">
+                                <h1 class="counter countfect" data-num="75"></h1>
+                                <h4>Featured<span>Ads</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container featured-container p-0">
+        <div class="col-xs-12 col-md-12 col-sm-12 text-center">
+            <h2>Latest <span class="heading-color"> Blog </span> Post</h2>
+            <p class="heading-text">Eu delicata rationibus usu. Vix te putant utroque, ludus fabellas duo eu, his dico
+                ut debet consectetuer.</p>
+        </div>
+    </div>
+    <div class="container blog-container">
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 col-xs-12">
+                <div class="blog-post">
+                    <div class="post-img">
+                        <a href=""><img class="img-responsive" src="./img/template13/blo-1-400x300.jpg" alt=""></a>
+                    </div>
+                    <div class="blog-content">
+                        <div class="user-dp">
+                            <a href=""> <img class="img-circle resize" src="./img/template13/1.jpg" alt=""></a>
+                        </div>
+                        <div class="post-info">
+                            <a href="">June 30, 2017</a>
+                            <a href="">0 comments</a>
+                        </div>
+                        <h3 class="post-title">
+                            <a href="">Heavy Bikes Production For North America Will Cease For A Year</a>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-xs-12">
+                <div class="blog-post">
+                    <div class="post-img">
+                        <a href=""><img class="img-responsive" src="./img/template13/blo-2-400x300.jpg" alt=""></a>
+                    </div>
+                    <div class="blog-content">
+                        <div class="user-dp">
+                            <a href=""> <img class="img-circle resize" src="./img/template13/1.jpg" alt=""></a>
+                        </div>
+                        <div class="post-info">
+                            <a href="">June 30, 2017</a>
+                            <a href="">0 comments</a>
+                        </div>
+                        <h3 class="post-title">
+                            <a href="">We Hear: Yamaha RS Models Could Be Offered In Rear-Wheel</a>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-xs-12">
+                <div class="blog-post">
+                    <div class="post-img">
+                        <a href=""><img class="img-responsive" src="./img/template13/blo-5-400x300.jpg" alt=""></a>
+                    </div>
+                    <div class="blog-content">
+                        <div class="user-dp">
+                            <a href=""> <img class="img-circle resize" src="./img/template13/1.jpg" alt=""></a>
+                        </div>
+                        <div class="post-info">
+                            <a href="">June 30, 2017</a>
+                            <a href="">0 comments</a>
+                        </div>
+                        <h3 class="post-title">
+                            <a href="">Heavy Bikes Production For North America Will Cease For A Year</a>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="jumbotron jumbo-testimonials">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 col-xs-12 mb-4">
+                    <div class="testimonial-card">
+                        <div class="tm-content">
+                            <h4>VERY QUICK AND FAST SUPPORT</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod tempor enim minim
+                                veniam quis notru.</p>
+                        </div>
+                        <div class="tm-box">
+                            <img src="./img/template13/1-14-90x90.jpg" alt="">
+                            <div class="tm-name">
+                                <h3>Hania Sheikh </h3>
+                                <p> CEO Pvt. Inc.</p>
+                                <i class="fa fa-star-ofa fa-star"></i>
+                                <i class="fa fa-star-ofa fa-star"></i>
+                                <i class="fa fa-star-ofa fa-star"></i>
+                                <i class="fa fa-star-ofa fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span class="quote fas fa-quote-right"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-12 mb-4">
+                    <div class="testimonial-card">
+                        <div class="tm-content">
+                            <h4>DONE IN 3 MONTHS! AWESOME</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod tempor enim minim
+                                veniam quis notru.</p>
+                        </div>
+                        <div class="tm-box">
+                            <img src="./img/template13/6-90x90.jpg" alt="">
+                            <div class="tm-name">
+                                <h3>Humayun Sarfraz</h3>
+                                <p>CTO Glixen Tech.</p>
+                                <i class="fa fa-star-ofa fa-star"></i>
+                                <i class="fa fa-star-ofa fa-star"></i>
+                                <i class="fa fa-star-ofa fa-star"></i>
+                                <i class="fa fa-star-ofa fa-star"></i>
+                                <i class="fa fa-star-ofa fa-star"></i>
+                                <span class="quote fas fa-quote-right"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-12 mb-4">
+                    <div class="testimonial-card">
+                        <div class="tm-content">
+                            <h4>JUST FABULOUS THEME</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod tempor enim minim
+                                veniam quis notru.</p>
+                        </div>
+                        <div class="tm-box">
+                            <img src="./img/template13/5-1-90x90.jpg" alt="">
+                            <div class="tm-name">
+                                <h3>Arslan Tariq</h3>
+                                <p>CTO Albana Inc.</p>
+                                <i class="fa fa-star-ofa fa-star"></i>
+                                <i class="fa fa-star-ofa fa-star"></i>
+                                <i class="fa fa-star-ofa fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span class="quote fas fa-quote-right"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container sell-bike">
+        <div class="row">
+            <div class="col-md-6 col-xs-12 d-none d-lg-block">
+                <img src="./img/template13/ser.jpg" alt="">
+            </div>
+            <div class="col-md-12 col-lg-6 col-xs-12">
+                <div class="about-selling">
+                    <div class="holder">
+                        <h3>Want To Sale Your Bike ?</h3>
+                        <h2>BIKE INSPECTION</h2>
+                    </div>
+                    <p>Our CarSure experts inspect the car on over 200 checkpoints so you get complete satisfaction and
+                        peace of mind before buying. </p>
+                    <div class="row">
+                        <div class="point col-12 col-md-4 col-sm-6">
+                            <i class="fa fa-check"></i> Transmission
+                        </div>
+                        <div class="point col-12 col-md-4 col-sm-6">
+                            <i class="fa fa-check"></i> Steering
+                        </div>
+                        <div class="point col-12 col-md-4 col-sm-6">
+                            <i class="fa fa-check"></i> Engine
+                        </div>
+                        <div class="point col-12 col-md-4 col-sm-6">
+                            <i class="fa fa-check"></i> Tires
+                        </div>
+                        <div class="point col-12 col-md-4 col-sm-6">
+                            <i class="fa fa-check"></i> Lighting
+                        </div>
+                        <div class="point col-12 col-md-4 col-sm-6">
+                            <i class="fa fa-check"></i> Interior
+                        </div>
+                        <div class="point col-12 col-md-4 col-sm-6">
+                            <i class="fa fa-check"></i> Suspension
+                        </div>
+                        <div class="point col-12 col-md-4 col-sm-6">
+                            <i class="fa fa-check"></i> Exterior
+                        </div>
+                        <div class="point col-12 col-md-4 col-sm-6">
+                            <i class="fa fa-check"></i> Brakes
+                        </div>
+                        <div class="point col-12 col-md-4 col-sm-6">
+                            <i class="fa fa-check"></i> Air Conditioning
+                        </div>
+                        <div class="point col-12 col-md-4 col-sm-6">
+                            <i class="fa fa-check"></i> Engine Diagnostics
+                        </div>
+                        <div class="point col-12 col-md-4 col-sm-6">
+                            <i class="fa fa-check"></i> Wheel Alignment
+                        </div>
+                    </div>
+                    <a href="" class="btn btn-submit">SCHEDULE INSPECTION ></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron brands">
+        <div class="container">
+            <div class="holder">
+                <h2>
+                    Ads <span>By Make</span>
+                </h2>
+            </div>
+            <div class="row text-center">
+                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                    <div class="box">
+                        <a href="">
+                            <img alt="BMW" src="./img/template13/2.png">
+                            <h4>BMW</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                    <div class="box">
+                        <a href="">
+                            <img alt="Honda" src="./img/template13/honda.png">
+                            <h4>Honda</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                    <div class="box">
+                        <a href="">
+                            <img alt="Ducati" src="./img/template13/duc.png">
+                            <h4>Ducati</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                    <div class="box">
+                        <a href="">
+                            <img alt="Kawasaki" src="./img/template13/kawasaki.png">
+                            <h4>Kawasaki</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                    <div class="box">
+                        <a href="">
+                            <img alt="KTM" src="./img/template13/ktm-1.png">
+                            <h4>KTM</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                    <div class="box">
+                        <a href="">
+                            <img alt="Suzuki" src="./img/template13/suzuki-lg.png">
+                            <h4>Suzuki</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron jumbo-app">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 text-center align-self-end d-none d-lg-block" height="max-content">
+                    <img class="phone-img" src="./img/template13/hand.png" alt="">
+                </div>
+                <div class="col-lg-6 col-md-12 col-xs-12">
+                    <div class="app-info">
+                        <h5>DOWNLOAD OUR APP</h5>
+                        <h3>GET OUR APP FOR YOUR MOBILE</h3>
+                        <div class="more-info">
+                            <div class="point">
+                                <i class="far fa-hand-point-right"></i> Find nearby cars in your network with Scholar
+                            </div>
+                            <div class="point">
+                                <i class="far fa-hand-point-right"></i> Browse real hirers reviews to know why choose
+                                Scholar
+                            </div>
+                            <div class="point">
+                                <i class="far fa-hand-point-right"></i> Rent a Bike so easy with a tap !
+                            </div>
+                            <div class="point">
+                                <i class="far fa-hand-point-right"></i> Rent a Bike so easy with a tap !
+                            </div>
+                        </div>
+                        <div class="app-download-btn">
+                            <div class="row">
+                                <div class="col-md-12 col-xl-6 pb-4">
+                                    <a href="#" title="Window Store" class="btn download-btn">
+                                        <div class="store-btn">
+                                            <img src="./img/template13/android-logo.png" height="50px" alt="">
+                                            <span>
+                                                <h5>DOWNLOAD FROM</h5>
+                                                <p>WINDOW STORE</p>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-12 col-xl-6 pb-4">
+                                    <a href="#" title="Apple Store" class="btn download-btn">
+                                        <div class="store-btn">
+                                            <i class="fab fa-apple"></i>
+                                            <span>
+                                                <h5>DOWNLOAD FROM</h5>
+                                                <p>APPLE STORE</p>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3  col-md-6 col-xs-12">
+                    <div class="cards about">
+                        <div class="logo">
+                            <a href=""><img src="/img/template13/logo-1.png" class="img-responsive" alt=""></a>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et dolor eget erat
+                            fringilla port.</p>
+                        <ul class="appstores">
+                            <li>
+                                <a href="#"><img src="/img/template13/googleplay.png" alt=""></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="/img/template13/appstore.png" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3  col-md-6 col-xs-12">
+                    <div class="cards social">
+                        <h5>Follow Us</h5>
+                        <ul>
+                            <li>
+                                <a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <span><a href="#">Facebook</a></span>
+                            </li>
+                            <li>
+                                <a class="twitter" href="#"><i class="fab fa-twitter "></i></a>
+                                <span><a href="#">Twitter</a></span>
+                            </li>
+                            <li>
+                                <a class="linkedin" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <span><a href="#">Linkedin</a></span>
+                            </li>
+                            <li>
+                                <a class="google" href="#"><i class="fab fa-google-plus-g"></i></a>
+                                <span><a href="#">Google</a></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3  col-md-6 col-xs-12">
+                    <div class="cards links">
+                        <h5>Quick Links</h5>
+                        <ul>
+                            <li><a href="">Sample Page</a></li>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3  col-md-6 col-xs-12">
+                    <div class="cards newsletter">
+                        <h5>Singup for Weekly Newsletter</h5>
+                        <div class="fieldset">
+                            <p>We may send you information about related events, webinars, products and services
+                                which we believe.</p>
+                            <form>
+                                <input name="sb_email" id="sb_email" placeholder="Enter your email address" type="text"
+                                    required="">
+                                <input class="submit-btn" id="save_email" value="SUBMIT" type="button">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        <p>Copyright 2017 © Theme Created By <a href="">ScriptsBundle</a> All
+                            Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="#" id="toTopBtn" class="text-center" data-abc="true"><i class="fas fa-chevron-up"></i></a>
     <!-- build:js js/template13/main.js -->
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/template13/countfect.min.js"></script>
     <script src="js/template13/scripts.js"></script>
     <!-- endbuild -->
 </body>
+
 </html>

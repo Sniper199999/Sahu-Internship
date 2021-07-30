@@ -11,7 +11,8 @@
     "watch:scss": "onchange \"css/**/*.scss\" -- npm run scss",
     "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\"",
     "clean": "rimraf dist",
-    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    
+	"copyfonts": "copyfiles -f node_modules/@fortawesome/fontawesome-free/webfonts/* dist/webfonts",	
     "imagemin": "imagemin img/template1/* -o dist/img/template1 && imagemin img/template13/* -o dist/img/template13 && imagemin img/template16/* -o dist/img/template16",
     "usemin": "usemin template1.html -d dist --htmlmin -o dist/template1.html && usemin template13.html -d dist --htmlmin -o dist/template13.html && usemin template16.html -d dist --htmlmin -o dist/template16.html",
     "build": "npm run clean && npm run copyfonts && npm run imagemin && npm run usemin"

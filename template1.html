@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,17 +8,304 @@
 
     <!-- build:css css/template1/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
-    <link rel="stylesheet" href="css/template1/styles.scss">
+    <link rel="stylesheet" href="css/template1/styles.css">
     <!-- endbuild -->
 
     <title>Teamplate 1</title>
 </head>
+
 <body>
-    <div class="jumbotron jumbo-header">
-        
+    <div class="header-bg fixed-top d-none d-md-block">
+        <div class="container header-row gray">
+          <div class="row align-items-center inner">
+            <div class="col-auto blue">
+              <a href=""><i class="fas fa-phone fa-white mr-2"></i></a>
+              <strong>Phone :</strong> + 1 800 722 8987
+            </div>
+            <div class="row col-auto  ml-lg-auto ml-md-1">
+              <a href=""><span class="fas fa-envelope fa-white mr-2"></span></a>
+              <p class="mb-0 pr-3 mr-3 top-mail">info@denteur.com</p>
+    
+              <a href=""><span class="fab fa-facebook-f fa-white  mr-3"></span></a>
+              <a href=""><i class="fab fa-twitter fa-white mr-3"></i></a>
+              <a href=""><i class="fab fa-linkedin fa-white mr-3"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+          <button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#Navbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a href="#" class="navbar-brand mr-auto pt-0 pb-0"><img src="img/template16/logo.png" height="40px" alt=""></a>
+          <div class="collapse navbar-collapse" id="Navbar">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle nav-btn" href="#" id="navbarDropdown" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Home
+                  <span class="fas fa-angle-down"></span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="template16.html">Home 1</a>
+                  <a class="dropdown-item" href="template16.html">Home 2</a>
+                  <a class="dropdown-item" href="template16.html">Home 3</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle nav-btn" href="#" id="navbarDropdown" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Pages
+                  <span class="fas fa-angle-down"></span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="">Page 1</a>
+                  <a class="dropdown-item" href="">Page 2</a>
+                  <a class="dropdown-item" href="">Page 3</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-btn" id="navbarDropdown" href="">Services</a>
+              </li>
+    
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle nav-btn" href="" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Departments
+                  <span class="fas fa-angle-down"></span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="">Department 1</a>
+                  <a class="dropdown-item" href="">Department 2</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle nav-btn" href="" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Blogs
+                  <span class="fas fa-angle-down"></span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="">Blog 1</a>
+                  <a class="dropdown-item" href="">Blog 2</a>
+                  <a class="dropdown-item" href="">Blog 3</a>
+                  <a class="dropdown-item" href="">Blog 4</a>
+                  <a class="dropdown-item" href="">Blog 5</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle nav-btn" href="" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Contact
+                  <span class="fas fa-angle-down"></span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="template1.html">Contact Us</a>
+                  <a class="dropdown-item" href="">Contact a Professional</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="jumbotron jumbo-header row p-0">
+        <div class="container align-self-end">
+            <div class="pages-title">
+                <h1>Denteur <br> <span>Contact Us</span></h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="template16.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
     </div>
+    <div class="container contact-container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="contact-info">
+                    <h5>OUR OFFICE</h5>
+                    <h2>Get In Touch</h2>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                        when looking at its layout.</p>
+                    <form class="contact-form" novalidate>
+                        <div class="form-row">
+                            <div class="col-md-12 form-group">
+                                <input type="text" class="form-control" id="nameinput" placeholder="Name" required>
+                                <div class="invalid-feedback">
+                                    Name cannot be empty.
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 form-group pr-4">
+                                <input type="email" class="form-control" id="emailinput" placeholder="Email address"
+                                    required>
+                                <div class="invalid-feedback">
+                                    Valid email address is required.
+                                </div>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <input type="tel" class="form-control" id="phoneinput"
+                                    placeholder="Please enter your phone" pattern="[0-9]">
+                            </div>
+                            <div class="col-12 form-group">
+                                <textarea class="form-control" id="textareainput" rows="3" placeholder="Your message"
+                                    required></textarea>
+                                <div class="invalid-feedback">
+                                    Text area cannot be empty.
+                                </div>
+                            </div>
+                            <button class="btn btn-primary" type="submit">SEND MESSAGE</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div id="map-container-google-1" class="z-depth-1-half map-container">
+                    <iframe src="https://maps.google.com/maps?q=Gowanus&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container our-info">
+        <div class="row text-center justify-content-around">
+            <div class="col-md-6 col-lg-4">
+                <div class="contact-box">
+                    <i class="fas fa-phone"></i>
+                    <h3>Phone</h3>
+                    <p>347-622-1406</p>
+                    <p>212-322-1299</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="contact-box">
+                    <i class="fas fa-map-marker"></i>
+                    <h3>Address</h3>
+                    <p>PO BOX 33195 NW 56th ST Miami, Florida</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="contact-box">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>info@denteur.com</p>
+                    <p>support@denteur.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="footer-contact">
+                <img src="img/template16/logo-footer.png" width="180px" alt="">
+                <p>Denteur care about dental promote dental health through organized.</p>
+                <div class="contact-info">
+                  <div class="row align-content-center">
+                    <i class="fas fa-map-marker"></i>
+                    <p class="col">PO BOX 33195 NW 56th ST Miami, Florida</p>
+                  </div>
+                  <div class="row">
+                    <i class="fas fa-phone"></i>
+                    <p class="col">Call US: + 1 800 722 8987</p>
+                  </div>
+                  <div class="row">
+                    <i class="fas fa-envelope"></i>
+                    <p class="col">info@denteur.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="footer-recent">
+                <h4>RECENT POSTS</h4>
+                <div class="recent-post row m-0">
+                  <div class="col-auto img-container">
+                    <img class="" src="img/template16/blog-thumb.jpg" width="70px" alt="">
+                  </div>
+                  <div class="col post-caption">
+                    <h5>What Causes Periocoronitis</h5>
+                    <p>24 July 2019</p>
+                  </div>
+                </div>
+                <hr class="divider">
+                <div class="recent-post row m-0">
+                  <div class="col-auto img-container">
+                    <img class="" src="img/template16/blog-thumb2.jpg" width="70px" alt="">
+                  </div>
+                  <div class="col post-caption">
+                    <h5>Gingivitis Causes and Treatment</h5>
+                    <p>22 July 2019</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="footer-links">
+                <h4>TAGS</h4>
+                <div class="links">
+                  <ul>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Blogs &amp; News</a></li>
+                    <li><a href="">Contact US</a></li>
+                    <li><a href="">Our Services</a></li>
+                    <li><a href="">Gallery</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="footer-insta">
+                <h4>INSTAGRAM PHOTOS</h4>
+                <div class="insta-pics">
+                  <div class="row m-0">
+                    <div class="pic-container col-4 col-sm-2 col-md-2 col-lg-4">
+                      <a href=""><img src="img/template16/img15.jpg" alt=""></a>
+                    </div>
+                    <div class="pic-container col-4 col-sm-2 col-md-2 col-lg-4">
+                      <a href=""><img src="img/template16/img27.jpg" alt=""></a>
+                    </div>
+                    <div class="pic-container col-4 col-sm-2 col-md-2 col-lg-4">
+                      <a href=""><img src="img/template16/img28.jpg" alt=""></a>
+                    </div>
+                    <div class="pic-container col-4 col-sm-2 col-md-2 col-lg-4">
+                      <a href=""><img src="img/template16/img29.jpg" alt=""></a>
+                    </div>
+                    <div class="pic-container col-4 col-sm-2 col-md-2 col-lg-4">
+                      <a href=""><img src="img/template16/img30.jpg" alt=""></a>
+                    </div>
+                    <div class="pic-container col-4 col-sm-2 col-md-2 col-lg-4">
+                      <a href=""><img src="img/template16/img31.jpg" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="divider">
+          <div class="footer-bottom row justify-content-between">
+            <div class="copyright col-auto p-0">
+              <p>© 2019 Denteur - Responsive Dental &amp; Medical HTML Template</p>
+            </div>
+            <div class="footer-social col-auto p-0">
+              <div class="row m-0">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                <a href=""><i class="fab fa-instagram mr-0"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <a href="#" id="toTopBtn" class="text-center" data-abc="true"><i class="fas fa-chevron-up"></i></a>
     <!-- build:js js/template1/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
@@ -25,4 +313,5 @@
     <script src="js/template1/scripts.js"></script>
     <!-- endbuild -->
 </body>
+
 </html>
